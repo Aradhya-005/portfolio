@@ -10,7 +10,8 @@ function Project() {
     {
       title: "CreativFi",
       description:
-        "a  platform designed to connect content creators with freelancing opportunities tailored to their unique skills.",
+        "a web app designed to connect content creators with freelancing opportunities tailored to their unique skills.",
+      techStack : "created using reactjs",
       image: CreativFi, // Corrected
       github: "https://github.com/Aradhya-005/CreativFi",
       preview: "https://creativfi.vercel.app/",
@@ -18,7 +19,8 @@ function Project() {
     {
       title: "VocalRemover",
       description:
-        "A platform to find eco-friendly products and track carbon footprints.",
+        "A UI of a platform which extract the vocals from a file",
+        techStack : "created using Nextjs, Mantine UI",
       image: Vocal, // Corrected
       github: "https://github.com/Aradhya-005/VocalRemover",
       preview: "https://vocal-remover-gilt.vercel.app/",
@@ -26,7 +28,8 @@ function Project() {
     {
       title: "Emocare",
       description:
-        "An app that suggests techniques to reduce stress and improve well-being.",
+        "A web app that suggests techniques to reduce stress and improve well-being.",
+        techStack : "created using Reactjs",
       image: Emocare, // Corrected
       github: "https://github.com/Aradhya-005/Emocare",
       preview: "https://emocare-alpha.vercel.app/",
@@ -34,7 +37,8 @@ function Project() {
     {
       title: "Poke",
       description:
-        "An app that suggests techniques to reduce stress and improve well-being.",
+        "A  web app that includes all the pokemon characters with search functionality ( you can search your favorite character). ",
+        techStack : "created using Nextjs",
       image: Pokemon, // Corrected
       github: "https://github.com/Aradhya-005/poke_mon",
       preview: "https://poke-mon-olive.vercel.app/",
@@ -42,7 +46,8 @@ function Project() {
     {
       title: "Cholro",
       description:
-        "An app that suggests techniques to reduce stress and improve well-being.",
+        "A platform related to skincare and beauty ",
+      techStack : "created using Nextjs, Tailwind CSS",
       image: chloro, // Corrected
       github: "https://github.com/Aradhya-005/chloro",
       preview: "https://chloro-navy.vercel.app/",
@@ -60,6 +65,7 @@ function Project() {
             <div className="project-desc">
               <p>{project.description}</p>
             </div>
+            <div>  <p>{project.techStack}</p></div>
             <div className="navigations">
               <a
                 href={project.preview}
