@@ -23,11 +23,11 @@ function About() {
               Application.
             </p>
 
-            <p> she like to learn something new.</p>
+            <p> she likes to learn something new.</p>
             <p className="hobbies">
-              When she got some downtime, you might catch her watching k-drama,
-              photography or listening music.
-            </p>
+  When she has some downtime, you might find her watching K-dramas, exploring photography, or listening to music.
+</p>
+
             <p className="location">— Based in Lucknow, Uttar Pradesh</p>
           </div>
         </div>
