@@ -7,7 +7,7 @@ function Footer() {
     <footer className="footer" id="footer">
       <div className="footer-section">
         <p>
-          &copy; Aradhya Yadav 2024 | Frontend Developer | aradhyay868@gmail.com
+          &copy; Aradhya Yadav | Frontend Developer | aradhyay868@gmail.com
         </p>
       </div>
       <div className="icons">

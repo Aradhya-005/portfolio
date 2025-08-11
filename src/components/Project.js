@@ -4,6 +4,7 @@ import Pokemon from "../assets/pokemon.png";
 import Emocare from "../assets/Emocare.png";
 import CreativFi from "../assets/creative.png";
 import Vocal from "../assets/Vocal.png";
+import Navbar from "./Navbar";
 
 function Project() {
   const projects = [
@@ -12,7 +13,7 @@ function Project() {
       description:
         "a web app designed to connect content creators with freelancing opportunities tailored to their unique skills.",
       techStack : "created using reactjs",
-      image: CreativFi, // Corrected
+      image: CreativFi, 
       github: "https://github.com/Aradhya-005/CreativFi",
       preview: "https://creativfi.vercel.app/",
     },
@@ -21,7 +22,7 @@ function Project() {
       description:
         "A UI of a platform which extract the vocals from a file",
         techStack : "created using Nextjs, Mantine UI",
-      image: Vocal, // Corrected
+      image: Vocal, 
       github: "https://github.com/Aradhya-005/VocalRemover",
       preview: "https://vocal-remover-gilt.vercel.app/",
     },
@@ -30,7 +31,7 @@ function Project() {
       description:
         "A web app that suggests techniques to reduce stress and improve well-being.",
         techStack : "created using Reactjs",
-      image: Emocare, // Corrected
+      image: Emocare, 
       github: "https://github.com/Aradhya-005/Emocare",
       preview: "https://emocare-alpha.vercel.app/",
     },
@@ -39,7 +40,7 @@ function Project() {
       description:
         "A  web app that includes all the pokemon characters with search functionality ( you can search your favorite character). ",
         techStack : "created using Nextjs",
-      image: Pokemon, // Corrected
+      image: Pokemon, 
       github: "https://github.com/Aradhya-005/poke_mon",
       preview: "https://poke-mon-olive.vercel.app/",
     },
@@ -48,7 +49,7 @@ function Project() {
       description:
         "A platform related to skincare and beauty ",
       techStack : "created using Nextjs, Tailwind CSS",
-      image: chloro, // Corrected
+      image: chloro, 
       github: "https://github.com/Aradhya-005/chloro",
       preview: "https://chloro-navy.vercel.app/",
     },
@@ -57,7 +58,9 @@ function Project() {
   return (
     <>
       <div className="project-array">
-        {projects.map((project, index) => (
+      <Navbar/>
+       <div className= 'project-wrapper'>
+         {projects.map((project, index) => (
           <div className="project-container" key={index}>
             <div className="project-img">
               <img src={project.image} alt={`${project.title} thumbnail`} />
@@ -84,6 +87,7 @@ function Project() {
             </div>
           </div>
         ))}
+       </div>
       </div>
     </>
   );

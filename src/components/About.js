@@ -1,79 +1,97 @@
 import React from "react";
-import User from "../assets/user.jpg";
-// import { DotPattern } from "./DotPattern";
-import GridPatternLinearGradient from "./GridPatternLinearGradient";
+import User from "../assets/user.svg";
+import Navbar from "./Navbar";
+import skills from "../assets/skills.svg";
+import education from "../assets/education.svg";
+import experience from "../assets/experience.svg";
 
 function About() {
   return (
     <>
       <section className="hero-section">
-        {/* <DotPattern width={30} height={30} cx={10} cy={20} cr={1} color="#afafaf" />  */}
-        
-
+        <Navbar />
         <div className="about">
           <div className="about-img">
-            <img src={User} alt="User " />
+            <img src={User} alt="User" />
           </div>
           <div className="about-text">
-            <h1 className="name">Aradhya Yadav</h1>
-
+            <h1 className="name">
+              Hi, I'm Aradhya 👋
+            </h1>
             <p className="bold-text">
-              Aradhya is a Frontend Developer focused on building beautiful,
-              functional websites — currently pursuing Bachelor's in Computer
-              Application.
+              a Frontend Developer passionate about crafting beautiful and
+              functional websites. I recently completed my Bachelor's in
+              Computer Applications and I’m always eager to learn the latest in
+              tech and design.
             </p>
-
-            <p> she likes to learn something new.</p>
-            <p className="hobbies">
-  When she has some downtime, you might find her watching K-dramas, exploring photography, or listening to music.
-</p>
-
+            <p>
+              I love exploring new knowledge and expanding my skillset every
+              day.
+            </p>
+            {/* <p className="hobbies">
+              When I’m not coding, you’ll find me watching K-dramas, exploring
+              photography.
+            </p> */}
             <p className="location">— Based in Lucknow, Uttar Pradesh</p>
           </div>
         </div>
       </section>
       <section className="resume-section">
-        <div className="education">
-          <h2>EDUCATION</h2>
-          <div className="edu-entry">
-            <h3>University of Lucknow</h3>
-            <p>Bachelor's in Computer Application</p>
-            <span>Aug 2022 - Present</span>
+        <div className="cards">
+          <div className="card">
+            <h1 className="resume-heading">About Me</h1>
           </div>
-          <div className="edu-entry">
-            <h3>Jawahar Navodaya Vidyalaya Pipersand, Lucknow</h3>
-            <p>Intermediate</p>
-            <p>High School</p>
-            <span>July 2015 - June 2022</span>
+          <div className="experience card">
+            <img src={experience} alt="experience" />
+            <h2>Experience</h2>
+            <div className="exp-entry">
+              <h3>Frontend Developer Intern at DcodeBlock</h3>
+              <p>
+                - Created pixel perfect UI components using React.js and
+                Tailwind CSS.
+              </p>
+              <p>- implemented onboarding tour for the first time users. </p>
+              <span>March 2025 - May 2025</span>
+            </div>
+            <div className="exp-entry">
+              <h3>Open-Source Contributor at GSSOC'24 Extended</h3>
+              <p>
+                - Contributed to the open-source projects by fixing issues using
+                HTML, CSS, and JavaScript.
+              </p>
+              <p>- Improved UI/UX and optimized layout across devices.</p>
+              <span>Oct 2024 - Nov 2024</span>
+            </div>
           </div>
-        </div>
-        <div className="experience">
-          <h2>EXPERIENCE</h2>
-          <div className="exp-entry">
-            <h3> GSSOC'24 Extended</h3>
-            <p>Open-Source Contributor</p>
+          <div className="skills card">
+            <img src={skills} alt="skills" />
+            <h2>Skills</h2>
+            <ul>
+              <li>React.js</li>
+              <li>CSS3 + HTML5</li>
+              <li>Tailwind CSS</li>
+              <li>Javascript </li>
+              <li>Git & GitHub</li>
+              <li>Python</li>
+              <li>Figma</li>
+            </ul>
+          </div>
 
-            <span>Oct 2024 - Nov 2024 </span>
+          <div className="education card">
+            <img src={education} alt="education" />
+            <h2>Education</h2>
+            <div className="edu-entry">
+              <h3>University of Lucknow</h3>
+              <p>- Bachelor's in Computer Application</p>
+              <span>Aug 2022 - June 2025</span>
+            </div>
+            <div className="edu-entry">
+              <h3>Jawahar Navodaya Vidyalaya Pipersand, Lucknow</h3>
+              <p>- Intermediate</p>
+              <p>- High School</p>
+              <span>July 2015 - June 2022</span>
+            </div>
           </div>
-          <div className="exp-entry">
-            <h3>Software Engineering Fellow At HeadStarter</h3>
-            <p>
-              Selected from over 41,000 applicants for this prestigious
-              fellowship.
-            </p>
-            <span>July 2024 - Aug 2024</span>
-          </div>
-        </div>
-
-        <div className="skills" id="skills">
-          <h2>SKILLS</h2>
-          <ul>
-            <li>React.js</li>
-            <li>CSS3 + HTML5</li>
-            <li>Tailwind CSS</li>
-            <li>Javascript + Python</li>
-            <li>Figma</li>
-          </ul>
         </div>
       </section>
     </>
