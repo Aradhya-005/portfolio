@@ -530,7 +530,7 @@ span {
   .project-array {
     height: max-content;
     padding: 0 5px;
-    margin: 20px 30px 166px 30px;
+    margin: 20px 15px 166px 15px;
   }
 
   .project-wrapper {
@@ -548,7 +548,7 @@ span {
   .education,
   .experience,
   .skills {
-    width: 300px;
+    width: 250px;
     height: fit-content;
     padding: 40px 60px;
 
@@ -685,7 +685,7 @@ span {
     font-weight: 600;
   }
   .cards {
-    padding: 20px 45px 100px 45px;
+    padding: 20px 45px 100px 30px;
     display: flex;
     flex-direction: column;
   }
@@ -695,7 +695,7 @@ span {
     flex-direction: column;
   }
   .project-card {
-   width: 300px;
+   width: 280px;
         height: 360px;
         display: inline-block;
         border-radius: 20px;
