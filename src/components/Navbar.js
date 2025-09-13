@@ -39,7 +39,6 @@ function Navbar() {
         </ul>
       </nav>
 
-      {/* Mobile Navbar */}
       <nav className="mobile-navbar">
         <div
           className="logo"
@@ -49,7 +48,6 @@ function Navbar() {
           <p>Aradhya Yadav</p>
         </div>
 
-        {/* Toggle Button */}
         <div className="menu-icon" onClick={() => setOpen(!open)}>
           {open ? (
             <img src={CloseIcon} alt="close" />
@@ -58,10 +56,9 @@ function Navbar() {
           )}
         </div>
 
-        {/* Nav Links */}
         <ul
           className={open ? "mobile-nav-links" : "mobile-nav-links hidden"}
-          onClick={() => setOpen(false)} // closes when clicking a link
+          onClick={() => setOpen(false)}
         >
           <li>
             <NavLink
