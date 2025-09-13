@@ -235,7 +235,8 @@ span {
   padding: 10px 0;
 }
 
-.cards, .project-cards {
+.cards,
+.project-cards {
   column-count: 2;
 }
 
@@ -548,10 +549,9 @@ span {
   .education,
   .experience,
   .skills {
-    width: 250px;
+    width: 220px;
     height: fit-content;
     padding: 40px 60px;
-
   }
 
   .footer {
@@ -608,13 +608,11 @@ span {
 
 @media (min-width: 351px) and (max-width: 1050px) {
   .about h1::after {
-
     left: 40%;
     bottom: -21px;
     transform: translateX(-10%);
     width: 125px;
-   
-}
+  }
 
   .navbar {
     display: none;
@@ -695,15 +693,33 @@ span {
     flex-direction: column;
   }
   .project-card {
-   width: 280px;
-        height: 360px;
-        display: inline-block;
-        border-radius: 20px;
-        padding: 40px 40px;
+    width: 250px;
+    height: 360px;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 40px 40px;
     background-color: #ffffff;
   }
   .project-heading-container img {
     width: 86px;
     height: auto;
-}
+  }
+  .resume-section .resume-heading,
+  .project-heading {
+    position: relative;
+    font-size: 40px;
+    font-weight: 900;
+    font-family: "Recoleta", sans-serif;
+    z-index: 1;
+  }
+  .resume-heading::after {
+    bottom: 2px;
+    left: 13%;
+    transform: translateX(50%);
+    width: 133px;
+    height: 44px;
+  }
+  .resume-section {
+    padding: 0;
+  }
 }
